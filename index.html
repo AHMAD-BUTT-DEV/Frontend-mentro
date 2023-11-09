@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+      .result {
+        padding: 2vh 2vw;
+        border: 2px solid rgb(255, 255, 255);
+        width: 27vw;
+        height: 80vh;
+        background-color: hsl(252, 100%, 67%);
+        border-radius: 2rem;
+      }
+      .head {
+        font-size: 3vmin;
+        padding: 0.4rem;
+        text-align: center;
+      }
+
+      .num {
+        background-color: hsla(256, 72%, 46%, 1);
+        border-radius: 50%;
+        width: 230px;
+        height: 210px;
+        font-size: 10vmax;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 2.2rem;
+        color: white;
+      }
+      .num > span {
+        color: white;
+        font-size: 1vmax;
+        display: block;
+      }
+
+      .great {
+        margin-top: 5rem;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        width: 210px;
+        word-spacing: 2px;
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+      }
+
+      .summary-section {
+        color: black;
+        width: 35vw;
+        height: 80vh;
+        padding: 1rem;
+        border: 1px solid rgb(209, 209, 209);
+        border-left: none;
+        border-radius: 1rem;
+        box-shadow: 7px 10px 19px -4px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 7px 10px 19px -4px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 7px 10px 19px -4px rgba(0, 0, 0, 0.62);
+      }
+
+      .summary-section h1 {
+        margin: 2rem;
+      }
+
+      .summary-section h2 {
+        display: inline-block;
+      }
+      .summary-section p {
+        display: inline-block;
+      }
+      .whole-num {
+        margin-top: 3rem;
+        margin-left: 3rem;
+      }
+      .margin {
+        margin-bottom: 1.2rem;
+        border: 1px solid rgba(128, 128, 128, 0.247);
+      }
+      .reaction {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(255, 0, 0, 0.1);
+
+        & h2 {
+          color: red;
+        }
+      }
+      .memory {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(238, 255, 0, 0.281);
+
+        & h2 {
+          color: rgb(255, 187, 0);
+        }
+      }
+      .verbal {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(0, 255, 200, 0.1);
+
+        & h2 {
+          color: rgb(0, 255, 200);
+        }
+      }
+      .visual {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(0, 26, 255, 0.1);
+
+        & h2 {
+          color: rgb(47, 0, 255);
+        }
+      }
+
+      .btn {
+        margin-left: 1.5rem;
+        width: 25vw;
+        height: 7vh;
+        font-size: 1rem;
+        border-radius: 20px;
+        background-color: rgb(46, 45, 45);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue -->
+    <div class="container">
+      <div class="result">
+        <h1 class="head">Your Result</h1>
+        <h1 class="num">76 <span>of 100</span></h1>
+
+        <h1 class="great">Great</h1>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="summary-section">
+        <h1>Summary</h1>
+        <div class="whole-num">
+          <div class="reaction margin">
+            <img src="./assets/images/icon-reaction.svg" alt="" />
+            <h2>Reaction</h2>
+            <p>80 / 100</p>
+          </div>
+          <div class="memory margin">
+            <img src="./assets/images/icon-memory.svg" alt="" />
+            <h2>Memory</h2>
+            <p>92 / 100</p>
+          </div>
+          <div class="verbal margin">
+            <img src="./assets/images/icon-verbal.svg" alt="" />
+            <h2>Verbal</h2>
+            <p>61 / 100</p>
+          </div>
+          <div class="visual margin">
+            <img src="./assets/images/icon-visual.svg" alt="" />
+            <h2>Visual</h2>
+            <p>72 / 100</p>
+          </div>
+          <div class="btn-section">
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
